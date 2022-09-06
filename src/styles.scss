@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@import "colors";
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+
+p {
+  color: $primary
+}
+
+body {
+  font-family: 'Comic Neue', cursive;
+  font-size: 12px;
+  color: $body-text;
+}
