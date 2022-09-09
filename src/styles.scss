@@ -1,7 +1,7 @@
 @import "colors";
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
 
-p {
+p, h1, h2, h3 {
   color: $primary
 }
 
@@ -9,4 +9,40 @@ body {
   font-family: 'Comic Neue', cursive;
   font-size: 12px;
   color: $body-text;
+}
+
+.site-logo{
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: $secondary;
+  color: $primary;
+}
+
+.nav-link{
+  color: $primary;
+}
+
+.shadow-effect{
+  border: none;
+  box-shadow: 0px 0px 33px -10px rgba(71, 114, 254, 0.3);
+}
+
+.bg-theme{
+  color: $primary
+}
+
+input[type = text], input[type = email] {
+  font-size: 2vh;
+  width: 25vw;
+  height: 6vh;
+}
+
+.btn-theme{
+  font-size: 2vh;
+  background-color: $primary;
+  color: $navbar-footer;
+  border: none;
+  border-radius: 2px;
+  height: 6vh;
+  width: 10vw;
 }

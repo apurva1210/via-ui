@@ -1,0 +1,28 @@
+@import "../../colors";
+
+.card{
+  background-color:$secondary;
+  width: 100%;
+}
+
+input[type = text], input[type = email] {
+  font-size: 2vh;
+  width: 25vw;
+  height: 6vh;
+}
+
+.btn-theme{
+  font-size: 2vh;
+  background-color: $primary;
+  color: $navbar-footer;
+  border: none;
+  border-radius: 2px;
+  height: 6vh;
+  width: 10vw;
+}
+
+.subs-text{
+  width: 500px;
+}
+
+
