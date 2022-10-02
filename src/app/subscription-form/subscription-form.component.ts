@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Sub} from "../models/sub";
+import {SubscribersService} from "../services/subscribers.service";
 
 @Component({
   selector: 'app-subscription-form',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubscriptionFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(private subscriberService: SubscribersService) { }
 
   ngOnInit(): void {
   }
 
+  onSubmit(formValue: any) {
+    const subscriptionData: Sub = {
+      name: formValue.name,
+      email: formValue.email
+    }
+
+    this.subscriberService.addSubscribers(subscriptionData);
+  }
 }

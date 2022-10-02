@@ -18,6 +18,7 @@ import { SubscriptionFormComponent } from './subscription-form/subscription-form
 import { CommentFormComponent } from './comments/comment-form/comment-form.component';
 import { CommentListComponent } from './comments/comment-list/comment-list.component';
 import { PostCardComponent } from './layouts/post-card/post-card.component';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { PostCardComponent } from './layouts/post-card/post-card.component';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
