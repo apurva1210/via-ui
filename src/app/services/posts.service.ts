@@ -45,4 +45,21 @@ export class PostsService {
     );
   }
 
+  loadPostById(postId: string){
+    return this.angularFirestore.doc(`posts/${postId}`).valueChanges();
+  }
+
+  loadSimilar(categoryId: string){
+    return this.angularFirestore.collection('posts', ref => ref.where('category.categoryId', '==', categoryId).limit(4)).snapshotChanges().pipe(
+      map(actions => {
+        return actions.map(a => {
+          const data = a.payload.doc.data();
+          const id = a.payload.doc.id;
+          return { id, data }
+        })
+      })
+    );
+  }
+
+
 }
