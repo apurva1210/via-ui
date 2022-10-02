@@ -15,5 +15,9 @@ export class SubscribersService {
     })
   }
 
+  checkSubscriptionEmail(subscriptionEmail: string){
+    return this.angularFirestore.collection('subscribers', ref => ref.where('email', '==', subscriptionEmail)).get();
+  }
+
 
 }

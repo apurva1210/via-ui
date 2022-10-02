@@ -4,7 +4,16 @@
       <h3>SUBSCRIPTION FORM</h3>
       <p class="m-auto subs-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
 
-      <form class="my-5" #subscriptionForm = ngForm (ngSubmit)="onSubmit(subscriptionForm.value)">
+      <div class="alert alert-danger mt-3" *ngIf="isEmailError">
+        This Email id is already subscribed
+      </div>
+
+
+      <div class="alert alert-info mt-3" *ngIf="isSubscribed">
+        Thank you for subscribing
+      </div>
+
+      <form class="my-5" #subscriptionForm = ngForm (ngSubmit)="onSubmit(subscriptionForm.value)"  *ngIf="!isSubscribed">
         <div class="row">
                <div class="form-group col-md-5">
                  <input

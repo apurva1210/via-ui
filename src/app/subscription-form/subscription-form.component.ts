@@ -9,6 +9,9 @@ import {SubscribersService} from "../services/subscribers.service";
 })
 export class SubscriptionFormComponent implements OnInit {
 
+  isEmailError: boolean = false;
+  isSubscribed: boolean = false;
+
   constructor(private subscriberService: SubscribersService) { }
 
   ngOnInit(): void {
@@ -20,6 +23,13 @@ export class SubscriptionFormComponent implements OnInit {
       email: formValue.email
     }
 
-    this.subscriberService.addSubscribers(subscriptionData);
+    this.subscriberService.checkSubscriptionEmail(subscriptionData.email).subscribe(value => {
+      if(value.empty){
+        this.subscriberService.addSubscribers(subscriptionData);
+        this.isSubscribed = true;
+      }else{
+        this.isEmailError = true;
+      }
+    });
   }
 }
