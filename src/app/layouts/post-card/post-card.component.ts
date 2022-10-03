@@ -12,7 +12,6 @@ export class PostCardComponent implements OnInit {
   @Input() postData: any | undefined;
 
   ngOnInit(): void {
-    console.log(this.postData)
   }
 
 }
