@@ -2,34 +2,33 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12 text-center mt-5">
-        <h2 class="text-white"> Featured Posts </h2>
+        <h2 class="text-white mt-4"> Featured Posts </h2>
         <p class="text-white"> Pink, White, and Red Heart Stone Lot Pink</p>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-lg-3" *ngFor="let featuredPost of featuredPosts">
+    <div class="row mt-2">
+      <div class="col-lg-3 col-md-3 col-sm-1" *ngFor="let featuredPost of featuredPosts">
         <app-post-card [postData] = "featuredPost"></app-post-card>
       </div>
     </div>
 
-
   </div>
 </section>
 
-<section class="container mt-5">
-  <div class="col-md-12 text-center">
-    <h2> Latest Posts </h2>
-    <p>Pink, White, and Red Heart Stone Lot Pink  Pink, White, and Red Heart</p>
-  </div>
+<!--<section class="container mt-5">-->
+<!--  <div class="col-md-12 text-center">-->
+<!--    <h2> Latest Posts </h2>-->
+<!--    <p>Pink, White, and Red Heart Stone Lot Pink  Pink, White, and Red Heart</p>-->
+<!--  </div>-->
 
-  <div class="row">
+<!--  <div class="row">-->
 
-    <div class="col-md-4 mt-3" *ngFor="let latestPost of latestPosts">
-      <app-post-card [postData] = "latestPost"></app-post-card>
-    </div>
+<!--    <div class="col-md-4 mt-3" *ngFor="let latestPost of latestPosts">-->
+<!--      <app-post-card [postData] = "latestPost"></app-post-card>-->
+<!--    </div>-->
 
-  </div>
+<!--  </div>-->
 
 
-</section>
+<!--</section>-->
