@@ -2,7 +2,7 @@
 
 .card{
   background-color:$secondary;
-  width: 100%;
+ // width: 100%;
 }
 
 
@@ -12,8 +12,7 @@
   color: $navbar-footer;
   border: none;
   border-radius: 2px;
-  height: 6vh;
-  width: 10vw;
+ width: 100%;
 }
 
 .subs-text{
