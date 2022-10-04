@@ -19,3 +19,27 @@
   background-color: $secondary;
   width: 100%;
 }
+
+.category{
+  cursor: pointer;
+  padding: 2vh;
+  margin-bottom: 1vh;
+  background-color: #d3eedb;
+  color: $primary;
+  width: 100%;
+}
+
+.arrow{
+  position: absolute;
+  right: 0px;
+  margin-right: 1vh;
+  color: $primary;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 48
+}

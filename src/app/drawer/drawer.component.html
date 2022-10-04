@@ -3,9 +3,13 @@
   <mat-sidenav class="mt-3" [ngClass]="mobile ? 'mobileSideNav': 'sidenav'" #sidenav role="navigation" mode="side" [opened]="sidenavLayout">
 
     <div *ngFor="let category of categoryArray">
-      <div class="m-2"  (click)="sidenav.toggle()" [routerLink]="['/category', category.data.category, category.id]">
+      <div class="category"  (click)="sidenav.toggle()" [routerLink]="['/category', category.data.category, category.id]">
         {{category.data.category}}
+        <span class="material-symbols-outlined arrow">
+                           chevron_right
+        </span>
       </div>
+
     </div>
 
   </mat-sidenav>
