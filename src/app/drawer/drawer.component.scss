@@ -1,0 +1,21 @@
+@import "../../colors";
+
+.app-drawer-container {
+  flex: 1;
+}
+
+.app-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.sidenav{
+  background-color: $secondary;
+  width: 25%;
+}
+
+.mobileSideNav{
+  background-color: $secondary;
+  width: 100%;
+}

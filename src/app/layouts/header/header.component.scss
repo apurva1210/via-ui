@@ -1,14 +1,35 @@
 @import "../../../colors";
 
-header{
-  height: 100px;
-  background-color: pink;
-}
+
 
 .site-logo{
-  padding: 5px 20px;
-  border-radius: 20px;
+  padding: 1vh 2vh;
+  border-radius: 2vh;
   background-color: $secondary;
   color: $primary;
   font-size: 1.5rem;
+}
+
+
+
+.center {
+  //position: relative;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+
+.mat-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+.menu{
+  cursor: pointer;
+  margin-top: 1vh;
 }

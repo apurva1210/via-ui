@@ -1,11 +1,5 @@
 @import "../../../colors";
 
-nav{
-  margin-top: 100px;
-  height: 50px;
-  background-color: $navbar-footer;
-}
-
-.nav-link{
-  text-transform: uppercase;
+.menu{
+  color: $primary;
 }
